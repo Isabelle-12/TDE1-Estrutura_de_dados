@@ -25,7 +25,7 @@ public class PilhaPropria {
         return pixels[topo]; //ele esta me retornando o elemento do indece 0
     }
 
-    public  boolean estaVazia(){
+    public  boolean estaVaziaPilha(){
         return topo == 0; // verifica se topo é igual a 0, ou seja,
         // se não tem nenhum elemento guardado;
         // retorna um boolean: true se estiver vazia (topo == 0), false se tiver pelo menos 1 elemento guardado
