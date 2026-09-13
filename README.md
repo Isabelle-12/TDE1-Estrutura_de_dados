@@ -31,3 +31,33 @@ Conforme cada parte fica pronta e testada, o responsável abre um **Pull Request
 Depois que todas as branches estiverem na `master`, a classe `Main` é criada em conjunto (ou pela última pessoa a terminar), juntando tudo: leitura da imagem, execução do Flood Fill com Pilha e com Fila, e geração dos resultados/animação.
 
 > ⚠️ **Regra geral:** sempre dar `pull` na `master` antes de começar a trabalhar em qualquer branch, para evitar conflitos.
+
+---
+
+## ✅ Status atual
+
+Todas as partes do projeto já foram implementadas e mescladas na `master`:
+
+- [x] Classe `Pixel`
+- [x] `PilhaPropria` (LIFO)
+- [x] `FilaPropria` (FIFO)
+- [x] Interface `EstruturaDeDados` (implementada por `PilhaPropria` e `FilaPropria`)
+- [x] `GerenciadorImagem` (leitura, escrita e manipulação de pixels)
+- [x] `FloodFill` (núcleo do algoritmo, com versão simples e com animação)
+- [x] `Main` (integração final: executa o Flood Fill com Pilha e com Fila)
+
+**Próximos passos:** revisão geral do código e preparação individual para a arguição.
+
+---
+
+## 🗂️ Estrutura das classes
+
+| Classe | Responsabilidade |
+|---|---|
+| `Pixel` | Representa uma posição (linha, coluna) na imagem |
+| `PilhaPropria` | Estrutura própria em array, comportamento LIFO |
+| `FilaPropria` | Estrutura própria em array, comportamento FIFO |
+| `EstruturaDeDados` | Interface comum entre Pilha e Fila (`inserir`, `remover`, `estaVazia`) |
+| `GerenciadorImagem` | Abre, lê, pinta e salva imagens PNG (`File`/`BufferedImage`) |
+| `FloodFill` | Executa o algoritmo, usando qualquer `EstruturaDeDados` (Pilha ou Fila) |
+| `Main` | Integra tudo: roda o Flood Fill com Pilha e com Fila, salva resultados e animação |
