@@ -1,7 +1,7 @@
 //PILHA SIMPLES ARRAY
 //LIFO quem entra por ultimo sai por primeiro
 
-public class PilhaPropria {
+public class PilhaPropria implements EstruturaDeDados{
     private Pixel[] pixels;
     private int topo = 0;
 
@@ -25,9 +25,20 @@ public class PilhaPropria {
         return pixels[topo]; //ele esta me retornando o elemento do indece 0
     }
 
-    public  boolean estaVaziaPilha(){
+    @Override
+    public  boolean estaVazia(){
         return topo == 0; // verifica se topo é igual a 0, ou seja,
         // se não tem nenhum elemento guardado;
         // retorna um boolean: true se estiver vazia (topo == 0), false se tiver pelo menos 1 elemento guardado
+    }
+
+    @Override
+    public void inserir(Pixel p) {
+        empilhar(p);
+    }
+
+    @Override
+    public Pixel remover() {
+        return desempilhar();
     }
 }

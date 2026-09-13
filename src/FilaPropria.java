@@ -1,4 +1,7 @@
-public class FilaPropria {
+//FILA SIMPLES ARRAY
+//FIFO quem entra primeiro sai primeiro
+
+public class FilaPropria implements EstruturaDeDados{
     private Pixel[] pixels;
     private int inicio = 0;
     private int fim = -1;
@@ -21,7 +24,18 @@ public class FilaPropria {
         return pixelRemovido ; //retorna o elmento removido
     }
 
-    public boolean estaVaziaFila(){
+    @Override
+    public boolean estaVazia(){
         return inicio > fim; // ele vai me retornar tru quando a fila estiver vazia e false se ela tiver elementos nela
+    }
+
+    @Override
+    public void inserir(Pixel p) {
+        enfileirar(p);
+    }
+
+    @Override
+    public Pixel remover() {
+        return desenfileirar();
     }
 }
