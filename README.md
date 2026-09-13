@@ -9,7 +9,7 @@ A proposta desta atividade é a implementação do algoritmo **Flood Fill** de f
 ## 🔄 Fluxo de trabalho
 
 ### Etapa 1 — Base compartilhada
-A Pessoa 1 cria a classe `Pixel` (atributos `linha` e `coluna`, construtor e getters) direto na `master` e envia (push) assim que terminar. É uma classe pequena e todas as outras partes dependem dela, por isso não passa por branch separada.
+A Isabelle cria a classe `Pixel` (atributos `linha` e `coluna`, construtor e getters) direto na `master` e envia (push) assim que terminar. É uma classe pequena e todas as outras partes dependem dela, por isso não passa por branch separada.
 
 ### Etapa 2 — Atualização geral
 Antes de começar suas partes, todos os integrantes puxam (`pull`) a `master` atualizada, para já ter a classe `Pixel` disponível localmente.
@@ -19,7 +19,7 @@ Cada integrante cria sua própria branch a partir da `master` e desenvolve sua p
 
 | Branch | Responsável | Conteúdo |
 |---|---|---|
-| `feature/pixel-e-pilha` | Pessoa 1 | Classe `PilhaPropria` (empilhar/desempilhar) |
+| `feature/pixel-e-pilha` | Isabelle | Classe `PilhaPropria` (empilhar/desempilhar) |
 | `feature/fila` | Pessoa 2 | Classe `FilaPropria` (enfileirar/desenfileirar) |
 | `feature/leitura-imagem` | Pessoa 3 | Leitura/escrita de imagem com `File` e `BufferedImage`, incluindo salvamento das imagens intermediárias para a animação |
 | `feature/algoritmo-floodfill` | Pessoa 4 | Núcleo do algoritmo Flood Fill (verificação de limites, cor de fundo, pintura e empilhamento/enfileiramento dos vizinhos) |
