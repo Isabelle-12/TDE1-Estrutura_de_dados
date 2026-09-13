@@ -1,15 +1,15 @@
 public class Pixel {
-    //adicionas 2 atributos então pensa em uma imagem ela é separado por colunas e linhas
+
     private int linha;
     private int coluna;
 
-    //Construtor com parametros então aqui vou falar o valor da minha coluna e da minha linha "contruimos o objeto"
-    public Pixel(int linha, int coluna) { //new (2,3)
+
+    public Pixel(int linha, int coluna) {
         this.coluna = coluna;
         this.linha = linha;
     }
 
-    //metodos para ler/pegar os valores
+
     public int getLinha() {
         return linha;
     }
